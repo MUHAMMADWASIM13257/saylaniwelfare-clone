@@ -1,11 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saylani Welfare</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="/Style/Style.css">
+  <title>Saylani Welfare</title>
+
 </head>
+
 <body>
-    <p>Welcome To Saylani Welfare</p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="/img/logo.png" width="200" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+      <!-- Navbar-nav -->
+      <ul class="navbar-nav">
+        <!-- Nav-item -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- Nav-item -->
+        <!-- DropDown menu of About -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true"> About </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Introduction</a></li>
+            <div></div>
+            <li><a class="dropdown-item" href="#">Chairman Message</a></li>
+            <div></div>
+            <li><a class="dropdown-item" href="#">Audit Reports</a></li>
+            <div></div>
+            <li><a class="dropdown-item" href="#">Tax Exemption Certificate</a></li>
+          </ul>
+        </li>
+        <!-- Nav-item -->
+        <!-- Dropdown menu of Service -->
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Services</a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <!-- Dropend menu for Health -->
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle" href="#" id="healthDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Health</a>
+              <ul class="dropdown-menu" aria-labelledby="healthDropdown">
+                <li><a class="dropdown-item" href="#">Health Department</a></li>
+                <div></div>
+                <li><a class="dropdown-item" href="#">Mother & Child Care Center</a></li>
+                <div></div>
+                <li><a class="dropdown-item" href="#">Blood Bank & Thalassemia Center</a></li>
+                <div></div>
+                <li><a class="dropdown-item" href="#">Medical Equipment</a></li>
+                <div></div>
+                <li><a class="dropdown-item" href="#">Hijama</a></li>
+                <div></div>
+                <li><a class="dropdown-item" href="#">Laboratory Facility</a></li>
+                <div></div>
+                <li><a class="dropdown-item" href="#">X-Ray & Ultrasound</a></li>
+                <div></div>
+                <li><a class="dropdown-item" href="#">Mobile Healthcare Services</a></li>
+                <div></div>
+              </ul>
+            </li>
+            <!-- Dropend menu for Education -->
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle" href="#" id="educationDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Education</a>
+              <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                <li><a class="dropdown-item" href="#">Saylani Schooling System</a></li>
+                <!-- Dropend menu for Vocational Training -->
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="vocationalDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Vocational Training</a>
+                  <ul class="dropdown-menu" aria-labelledby="vocationalDropdown">
+                    <li><a class="dropdown-item" href="#">Motor Bike Mechanic Training</a></li>
+                    <div></div>
+                    <li><a class="dropdown-item" href="#">Textile Training Program</a></li>
+                    <div></div>
+                    <li><a class="dropdown-item" href="#">Mobile Repair Training</a></li>
+                    <div></div>
+                    <li><a class="dropdown-item" href="#">R.O. Plant Technician</a></li>
+                    <div></div>
+                  </ul>
+                </li>
+                <!-- Dropend menu for Technical Education -->
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="technicalDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Technical Education</a>
+                  <ul class="dropdown-menu" aria-labelledby="technicalDropdown">
+                    <li><a class="dropdown-item" href="#">Saylani Mass IT Training</a></li>
+                    <div></div>
+                    <li><a class="dropdown-item" href="#">PIAIC</a></li>
+                    <div></div>
+                  </ul>
+                </li>
+                <!-- Dropend menu for Islamic Education -->
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="IslamicDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Islamic Education</a>
+                  <ul class="dropdown-menu" aria-labelledby="IslamicDropdown">
+                    <li><a class="dropdown-item" href="#">Madarisa</a></li>
+                    <div></div>
+                    <li><a class="dropdown-item" href="#">Online Quran Academy</a></li>
+                    <div></div>
+                  </ul>
+                </li>
+                <!-- Dropend menu for Accounting and Finance -->
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="accountingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Accounting and Finance</a>
+                  <ul class="dropdown-menu" aria-labelledby="accountingDropdown">
+                    <li><a class="dropdown-item" href="#">SBIL</a></li>
+                    <div></div>
+                  </ul>
+                </li>
+
+              </ul>
+
+            </li>
+            <!-- Dropend menu for Food -->
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle" href="#" id="foodDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Food</a>
+              <ul class="dropdown-menu" aria-labelledby="foodDropdown">
+                <li><a class="dropdown-item" href="#">Family Support - Ration</a></li>
+                <li><a class="dropdown-item" href="#">Saylani Dastarkhwan</a></li>
+                <li><a class="dropdown-item" href="#">Saylani Breakfast</a></li>
+                <li><a class="dropdown-item" href="#">Sadqa Meat Distribution</a></li>
+                <li><a class="dropdown-item" href="#">Mobile Dastarkhwan</a></li>
+                <li><a class="dropdown-item" href="#">Mezban Saylani</a></li>
+                <li><a class="dropdown-item" href="#">Saylani Roti Bank</a></li>
+              </ul>
+            </li>
+            <!-- Dropend menu for Sadiqah Jariah -->
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle" href="#" id="sadiqahDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Sadiqah Jariah</a>
+              <ul class="dropdown-menu" aria-labelledby="sadiqahDropdown">
+                <li><a class="dropdown-item" href="#">Construction of Masajid</a></li>
+                <li><a class="dropdown-item" href="#">Clean Drinking Water</a></li>
+                <li><a class="dropdown-item" href="#">Plantation - Green Pakistan</a></li>
+              </ul>
+            </li>
+            <!-- Dropend menu for Social Welfare -->
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle" href="#" id="socialWelfareDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Social Welfare</a>
+              <ul class="dropdown-menu" aria-labelledby="socialWelfareDropdown">
+                <li><a class="dropdown-item" href="#">Kafalat Program</a></li>
+                <li><a class="dropdown-item" href="#">Wedding Support Program</a></li>
+                <li><a class="dropdown-item" href="#">Apna Karoobar</a></li>
+                <li><a class="dropdown-item" href="#">Saylani Job Bank</a></li>
+                <li><a class="dropdown-item" href="#">Laptop Financing Scheme</a></li>
+                <li><a class="dropdown-item" href="#">Saylani Housing Scheme</a></li>
+              </ul>
+            </li>
+            <!-- Dropend menu for Disaster Aid -->
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle" href="#" id="disasterAidDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Disaster Aid</a>
+              <ul class="dropdown-menu" aria-labelledby="disasterAidDropdown">
+                <li><a class="dropdown-item" href="#">Corona Relief Program</a></li>
+                <li><a class="dropdown-item" href="#">Flood and Rain Relief Program</a></li>
+                <li><a class="dropdown-item" href="#">Fire Fighting & Rescue Services</a></li>
+              </ul>
+            </li>
+            <!-- Dropend menu for Saylani Ehsaas -->
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle" href="#" id="saylaniEhsaasDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Saylani Ehsaas</a>
+              <ul class="dropdown-menu" aria-labelledby="saylaniEhsaasDropdown">
+                <li><a class="dropdown-item" href="#">Langar Khana</a></li>
+                <li><a class="dropdown-item" href="#">Panah Gaah</a></li>
+                <li><a class="dropdown-item" href="#">Koi Bhooka Na Soye Ga</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- Dropend menu for Media -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="mediaDropdown" data-bs-toggle="dropdown" aria-expanded="true"> Media </a>
+          <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+            <li><a class="dropdown-item" href="#">Videos</a></li>
+            <div></div>
+            <li><a class="dropdown-item" href="#">Books</a></li>
+            <div></div>
+            <li><a class="dropdown-item" href="#">News</a></li>
+            <div></div>
+          </ul>
+        </li>
+        <!-- Dropend menu for Contact Us -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="contactDropdown" data-bs-toggle="dropdown" aria-expanded="true">Contact
+            Us</a>
+          <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+            <li><a href="#" class="dropdown-item">Contact Us</a></li>
+            <li><a href="#" class="dropdown-item">Branches</a></li>
+          </ul>
+        </li>
+        <!-- Nav-item -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bank Details</a>
+        </li>
+        <!-- Nav-item -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Other Websites</a>
+        </li>
+        <form class="form-inline">
+          <button class="btn btn-primary ml-2" type="button">Qurbani 2024</button>
+          <button class="btn btn-primary ml-2" type="button">DONATE NOW</button>
+          <button class="btn btn-success ml-2 --bs-primary-border-subtle" type="button">BE A SPONSOR</button>
+        </form>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar end-----_______----- -->
+  <!-- Body -->
+  <div class="container text-center">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-md-6 ce">
+        <p class="h1">Welcome to the
+          <span class="h1 textColor">Saylani</span> Welfare
+        </p>
+        <p class="h3">The largest NGO offering free healthcare and lot more.</p>
+        <p>Saylani Welfare is on the ground and already working with local communities to assess how best to support
+          underprivileged families in more than 63 areas of day to day lives.</p>
+          <button type="button" class="btn btn-outline-primary">Explorer More</button>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="/img/right-bg.png" alt="">
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Script for Dropdown Menu Hover -->
+  <script>
+    $(document).ready(function () {
+      $('.dropdown').hover(function () {
+        $(this).addClass('show');
+        $(this).find('.dropdown-menu').addClass('show');
+      }, function () {
+        $(this).removeClass('show');
+        $(this).find('.dropdown-menu').removeClass('show');
+      });
+    });
+  </script>
+
 </body>
+
 </html>

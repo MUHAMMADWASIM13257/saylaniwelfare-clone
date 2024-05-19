@@ -1,0 +1,41 @@
+.dropdown .dropdown-menu{
+    display: none;
+}
+
+
+.dropdown:hover > .dropdown-menu ,.dropend:hover > .dropdown-menu    {
+    display: block;
+    margin-top: .125em;
+    margin-left: .125em;
+    
+}
+@media screen and (max-width:769px){
+    .dropend:hover > .dropdown-menu  {
+        position: absolute;
+        /* display: none; */
+        top: 0;
+        left: 100%;
+        margin-left: .125em;
+    }
+}  
+.dropend:hover > .dropdown-menu  {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: .125em;
+    
+}
+
+.textColor{
+    color: #8dc63f;
+}
+.align-content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust based on the desired height of the container */
+}
+
+.text-center {
+  text-align: center;
+}
