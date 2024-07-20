@@ -1,41 +1,318 @@
-.dropdown .dropdown-menu{
+:root {
+    --text-color: #0D6DB7;
+}
+
+.dropdown .dropdown-menu {
     display: none;
 }
 
 
-.dropdown:hover > .dropdown-menu ,.dropend:hover > .dropdown-menu    {
+.dropdown:hover>.dropdown-menu, .dropend:hover>.dropdown-menu {
     display: block;
-    margin-top: .125em;
+    /* margin-top: .125em; */
     margin-left: .125em;
-    
+
 }
-@media screen and (max-width:769px){
-    .dropend:hover > .dropdown-menu  {
+
+@media screen and (max-width:769px) {
+    .dropend:hover>.dropdown-menu {
         position: absolute;
-        /* display: none; */
+        display: none;
         top: 0;
         left: 100%;
         margin-left: .125em;
     }
-}  
-.dropend:hover > .dropdown-menu  {
+}
+
+.dropend:hover>.dropdown-menu {
     position: absolute;
     top: 0;
     left: 100%;
     margin-left: .125em;
-    
+
 }
 
-.textColor{
+.textColor {
     color: #8dc63f;
+    font-size: bolder;
 }
+
 .align-content-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Adjust based on the desired height of the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Adjust based on the desired height of the container */
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
+
+
+:root {
+    --color-primary: #8dc63f;
+    --color-secondary: #fff;
+}
+
+.bgColor {
+    background-color: var(--color-primary);
+}
+
+.animationBtn {
+    background: #000;
+    animation: slideIn 2s ease-in-out infinite alternate;
+    animation-delay: 0s;
+    transition: all 0.5s ease;
+    transform: translateY(0);
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-secondary);
+    /* padding: 10px 20px; */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    /* margin: 30px 0; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sponsorBtn {
+    background: #000;
+    animation: slideIn 2s ease-in-out infinite alternate;
+    animation-delay: 1s;
+    transition: all 0.5s ease;
+    transform: translateY(0);
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-secondary);
+    /* padding: 10px 20px; */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    /* margin: 30px 0; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.animationInput {
+    transition: all 0.5s ease;
+    transform: translateY(0);
+    opacity: 1;
+    background-color: #8dc63f;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-secondary);
+    border: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px white;
+}
+
+/* bg image full cover */
+.bgImageFullCover {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    /* background-image: url('/img/full-height-picture.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hover:hover {
+    background-color: #8dc63f;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px white;
+    animation: slideIn 2s ease-in-out infinite alternate;
+    animation-delay: 0s;
+    transition: all 0.5s ease;
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+.donate {
+    width: 100%;
+    background: #8dc63f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+
+
+}
+
+.card-footer, span {
+    color: #000;
+    text-align: left;
+    /* padding: 10px 20px; */
+    /* border: none; */
+    /* border-radius: 5px; */
+    font-size: 18px;
+
+    margin-top: 210px;
+}
+
+.card-footer {
+    background-color: rgba(255, 255, 255, 0.732);
+}
+
+.hoverOfThreePicture:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px white;
+    animation: slideIn 2s ease-in-out infinite alternate;
+    animation-delay: 0s;
+    transition: all 0.5s ease;
+    transform: translateY(-3);
+    opacity: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.bgImage {
+    background-image: url('/img/slide2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 300px;
+}
+
+/* Six Slide design */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    /* Adjust the height as needed */
+    border: 2px solid #ccc;
+    /* Border for the main container */
+    background-image: url('/img/slide2.jpg');
+    /* Background image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 0 0 0;
+    /* Rounded corners for the main container */
+}
+
+.text-div {
+    background-color: rgba(140, 198, 63, 0.9);
+    /* Green background with some transparency */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 100px 0 0 0;
+    /* border-top-left-radius: 10px; Border radius for the top-left corner */
+}
+
+.empty-div {
+    width: 50%;
+    height: 50%;
+    border: 1px solid white;
+}
+
+.textTitleColor {
+    color: #0D6DB7;
+    font-size: 24px;
+    text-align: left;
+}
+
+.item {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    transform: translateY(0);
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 5px white;
+    animation: slideIn 2s ease-in-out infinite alternate;
+    animation-delay: 0s;
+    transition: all 0.5s ease;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.item:hover {
+    transform: translateY(-3);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px white;
+    animation: slideIn 2s ease-in-out infinite alternate;
+    animation-delay: 0s;
+    transition: all 0.5s ease;
+    transform: translateY(-3);
+    opacity: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #F5F5
+}
+
+/* Shifting for card */
+        .testimonial-card {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+        }
+
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .testimonial-card h5 {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        .testimonial-card p {
+            font-size: 16px;
+            color: #6c757d;
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+        }
